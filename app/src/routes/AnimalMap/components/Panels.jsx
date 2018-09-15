@@ -12,21 +12,33 @@ export default class Sidebar extends Component {
 
         <div className="as-panel__element">
           <img className="as-panel__img" src={this.props.img_url} alt="" />
+          <hr />
+          <p className="as-badge as-bg--warning"> {this.props.status} </p>
         </div>
 
         <div className="as-panel__element">
           <p className="as-body">
             {this.props.text}
           </p>
-          <p className="as-badge as-bg--warning"> {this.props.status} </p>
         </div>
 
         <div className="as-panel__element">
-          <as-histogram-widget heading="Population" show-header show-clear> </as-histogram-widget>
-          <h2 className="as-subheader">Habitat Loss:</h2>
-          <p className="as-body">{this.props.overlap} %</p>
+          <as-histogram-widget heading="Population" show-header> </as-histogram-widget>
         </div>
       </div >
     );
+  }
+
+  componentDidMount() {
+    const histogramWidget = document.querySelector('as-histogram-widget');
+    histogramWidget.data = [
+      { start: 2000, end: 2018, value: 6000 },
+      { start: 2000, end: 2018, value: 3000 },
+      { start: 2000, end: 2018, value: 1000 },
+      { start: 2000, end: 2018, value: 500 },
+      { start: 2000, end: 2018, value: 300 },
+      { start: 2000, end: 2018, value: 280 },
+      { start: 2000, end: 2018, value: 275 },
+    ];
   }
 }
