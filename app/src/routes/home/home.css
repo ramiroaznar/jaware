@@ -1,19 +1,100 @@
+.app-home_container {
+  display: flex;
+  height: 100%;
+}
 .app-home {
-  padding: 48px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  flex: 0 0 50%;
 }
 
+
+.app-inner {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.app-home_subheader {
+  font: 16px 'Karla';
+  color: rgba(0, 0, 0, 0.4);
+  margin: 20px 0 40px 0;
+}
+
+
 .app-home__header {
-  text-align: center;
   margin-bottom: 32px;
 }
+.app-home_media {
+  flex: 0 0 50%;
+}
+  .app-home_media img {
+    height: 100%;
+    object-fit: cover;
+  }
 
 .app-home__form {
   display: flex;
   flex-direction: column;
-  
+  position: relative;
 }
 
-.app-home .form-group {
-  display: flex;
-  margin-bottom: 16px;
+.app-home_title {
+  font: 80px/1 'Merriweather';
+  color: #000;
+  font-weight: bold;
 }
+
+.app-home__results {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #fff;
+  top: 100%;  
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+}
+
+.app-home_input {
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  font-size: 14px;
+  color: #000;
+  padding: 12px 0;
+}
+.app-home_input:focus {
+  outline: none;
+}
+    ::-webkit-input-placeholder { 
+      color: rgba(0, 0, 0, 0.24);
+    }
+    ::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.24);
+    }
+    :-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.24);
+    }
+    :-moz-placeholder {
+      color: rgba(0, 0, 0, 0.24);
+    }
+
+.app-home_link {
+  margin: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  font: 14px/1 'Karla';
+  cursor: pointer;
+  color: #E9554C;
+}
+  .app-home_link:hover span {
+    text-decoration: underline;
+  }
+
+  .app-home_link img {
+    margin-right: 8px;
+  }
