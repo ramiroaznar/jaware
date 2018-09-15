@@ -1,6 +1,8 @@
+
 .app-details {
   height: 100%;
   display: flex;
+  padding: 24px;
 }
 
 .details__img-wrapper {
@@ -28,7 +30,7 @@
 }
 
 .details__title {
-  font: 80px/1 'Merriweather';
+  font: 50px/1 'Merriweather';
   color: #000;
   font-weight: bold;
   margin-bottom: 40px;
@@ -74,19 +76,17 @@
   width: 60%;
 }
 
-  .details__listItem a {
+  .details__listItem-link-wrapper a {
     color: #E9554C;
     text-decoration: none;
-    display: flex;
-    align-items: center;
   }
 
-  .details__listItem span {
+  .details__listItem-link-wrapper span {
     position: relative;
     z-index: 2;
   }
 
-  .details__listItem span:after {
+  .details__listItem-link-wrapper span:after {
     transition: all .25s cubic-bezier(.4,.01,.165,.99);
     content:'';
     position: absolute;
@@ -99,14 +99,10 @@
     transform: scaleX(0);
     transform-origin: left center;
   }
-  .details__listItem:hover span:after {
+  .details__listItem-link-wrapper:hover span:after {
     transform: scaleX(1);
   }
 
-.details__listItem-link-wrapper {
-  display: inline-block;
-  width: 35%;
-}
 
 
 @media (max-width: 480px) {
