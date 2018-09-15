@@ -7,13 +7,7 @@ export default class AnimalMap extends Component {
     super(props);
     this.state = {
       sidebarClass: 'as-panels',
-      panels: {
-        name: 'Jaguar',
-        sname: 'Panthera onca',
-        text: 'El jaguar, yaguar o yaguareté ​ es un carnívoro félido de la subfamilia de los Panterinos y género Panthera. Es la única de las cuatro especies actuales de este género que se encuentra en América. También es el mayor félido de América y el tercero del mundo, después del tigre y el león.',
-        population: '10.000',
-        status: 'En peligro'
-      }
+      name: props.match.params.id,
     }
   }
 
@@ -37,23 +31,30 @@ export default class AnimalMap extends Component {
   }
 
   componentDidMount() {
+    this.getData();
     const map = new window.mapboxgl.Map({
       container: 'map',
       style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
-      center: [0, 30],
-      zoom: 2,
+      center: [110, 6.5],
+      zoom: 3,
       dragRotate: false,
     });
 
     // Define user
     window.carto.setDefaultAuth({
-      user: 'cartovl',
+      user: 'ramirocartodb',
       apiKey: 'default_public'
     });
 
     // Define layer
-    const source = new window.carto.source.Dataset('ne_10m_populated_places_simple');
-    const viz = new window.carto.Viz();
+    const source = new window.carto.source.Dataset('endangered_spp');
+    const viz = new window.carto.Viz(`
+      color: red,
+      strokeWidth: 0,
+      filter: $name == '${this.props.match.params.id}'
+    `);
+
+    this.setState({ viz });
     const layer = new window.carto.Layer('layer', source, viz);
 
     layer.addTo(map, 'watername_ocean');
@@ -72,10 +73,25 @@ export default class AnimalMap extends Component {
   }
 
   getPanels() {
-    if (!this.state.panels) {
+    if (!this.state.sname) {
       return
     }
-    const { name, sname, text, status, population } = this.state.panels;
-    return <Panels name={name} sname={sname} text={text} status={status} population={population} ></Panels>
+    const { name, sname, text, status, population, overlap } = this.state;
+    return <Panels overlap={overlap} name={name} sname={sname} text={text} status={status} population={population} ></Panels>
+  }
+
+  getData() {
+    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap FROM endangered_spp WHERE name LIKE '${this.state.name}'`)
+      .then(raw => raw.json())
+      .then(response => {
+        const { description, overlap, population, species, status } = response.rows[0];
+        this.setState({
+          sname: species,
+          text: description,
+          population: population,
+          status: status,
+          overlap
+        })
+      });
   }
 }

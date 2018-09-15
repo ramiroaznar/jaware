@@ -29,17 +29,17 @@ export default class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div class="app-home_container">
+        <div className="app-home_container">
           <main className="app-home">
-            <div class="app-inner">
+            <div className="app-inner">
               <header className="app-home__header">
                 <h1 className="app-home_title">Jaware</h1>
               </header>
               <div className="app-home__form">
                 <div className="form-group">
                   <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" placeholder="Discover the social impact of you buy or consume." />
-                  <p class="app-home_link" onClick={() => this.props.history.push('/scan')}>
-                    <img src={arrow} />
+                  <p className="app-home_link" onClick={() => this.props.history.push('/scan')}>
+                    <img src={arrow} alt="arrow"/>
                     <span>or scan the barcode</span>
                   </p>
                 </div>
@@ -49,8 +49,8 @@ export default class Home extends Component {
               </div>
             </div>
           </main>
-          <aside class="app-home_media">
-              <img src={bg} />
+          <aside className="app-home_media">
+            <img src={bg} alt="" />
           </aside>
         </div>
       </React.Fragment>
@@ -69,6 +69,6 @@ export default class Home extends Component {
     }
     return this.state.products
       .filter(product => product.name.toLowerCase().includes(this.state.input.toLowerCase()))
-      .map((product, index) => <Product key={index} name={product.name} src={product.src}></Product>);
+      .map((product, index) => <Product onClick={() => this.props.history.push(`/details/${product.name}`)} key={index} name={product.name} src={product.src}></Product>);
   }
 }
