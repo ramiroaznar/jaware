@@ -3,7 +3,6 @@ import './panels.css';
 
 export default class Sidebar extends Component {
   render() {
-    console.warn(this.props);
     return (
       <div className="as-panel as-panel--top as-panel--right as-panel--vertical">
         <div className="as-panel__element as-bg--support-01">
