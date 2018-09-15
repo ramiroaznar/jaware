@@ -3,25 +3,13 @@ import Product from './components/Product';
 import './home.css';
 import bg from './img/bg.jpg';
 
+import PRODUCTS from '../../state/products';
+
 export default class Home extends Component {
   constructor() {
     super();
     this.state = {
-      products: [
-        {
-          name: 'Nocilla',
-          src: 'https://static.condisline.com/resize_1280x1024/images/catalog/large/207523.jpg',
-          id: '0012345678905'
-        },
-        {
-          name: 'Axe',
-          src: 'https://www.perfumeriaslaguna.com/images/products/axe-desodorante-spray-150-ml-you.jpg',
-        },
-        {
-          name: 'Piano',
-          src: 'http://lallavedeafinar.com/image/cache/data/Juego%20de%20plaquetas%20para%20teclado%20con%20frontal-500x500.jpg'
-        }
-      ],
+      products: PRODUCTS,
       input: '',
     }
   }
@@ -71,6 +59,6 @@ export default class Home extends Component {
     }
     return this.state.products
       .filter(product => product.name.toLowerCase().includes(this.state.input.toLowerCase()))
-      .map((product, index) => <Product history={this.props.history} id={product.id} key={index} name={product.name} src={product.src}></Product>);
+      .map((product, index) => <Product history={this.props.history} id={product.id} key={index} name={product.name} src={product.img_url}></Product>);
   }
 }

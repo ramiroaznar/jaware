@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 // import Banner from './components/Banner';
-import DATA from './data';
+import products from '../../state/products';
 import arrow from './img/arrow.svg';
-
 
 import './details.css';
 
 export default class Details extends Component {
   constructor(props) {
     super(props);
-    this.state = DATA[props.match.params.id]
+
+    this.state = products.find(product => product.id == props.match.params.id);
   }
 
   render() {
@@ -31,7 +31,7 @@ export default class Details extends Component {
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Impacto ecológico</h3>
-            <p className="details__sectionText">{this.state.eco_info}</p>
+            <p className="details__sectionText">{this.state.description}</p>
           </div>
 
           <div className="details__section">
