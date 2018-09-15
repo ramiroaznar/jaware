@@ -11,17 +11,18 @@ export default class Sidebar extends Component {
         </div>
 
         <div className="as-panel__element">
-          <h2 className="as-subheader">Descripción</h2>
-          <p className="as-body">
-            {this.props.text}
-          </p>
+          <img className="as-panel__img" src={this.props.img_url} alt="" />
         </div>
 
         <div className="as-panel__element">
-          <h2 className="as-subheader">Info</h2>
+          <p className="as-body">
+            {this.props.text}
+          </p>
           <p className="as-badge as-bg--warning"> {this.props.status} </p>
-          <h2 className="as-subheader">Population:</h2>
-          <p className="as-body">{this.props.population}</p>
+        </div>
+
+        <div className="as-panel__element">
+          <as-histogram-widget heading="Population" show-header show-clear> </as-histogram-widget>
           <h2 className="as-subheader">Habitat Loss:</h2>
           <p className="as-body">{this.props.overlap} %</p>
         </div>

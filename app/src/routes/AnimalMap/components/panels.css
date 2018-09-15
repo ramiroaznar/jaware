@@ -11,3 +11,8 @@
 .as-panel__element.as-bg--support-01 {
   color: white;
 }
+
+.as-panel__img {
+  padding: -15px;
+  width: 100%;
+}
