@@ -10,7 +10,8 @@ export default class Home extends Component {
       products: [
         {
           name: 'Nocilla',
-          src: 'https://static.condisline.com/resize_1280x1024/images/catalog/large/207523.jpg'
+          src: 'https://static.condisline.com/resize_1280x1024/images/catalog/large/207523.jpg',
+          id: '0012345678905'
         },
         {
           name: 'Axe',
@@ -36,11 +37,11 @@ export default class Home extends Component {
               </header>
               <div className="app-home__form">
                 <div className="form-group">
-                  <fieldset class="form-group_container">
-                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autocomplete="off" placeholder="Introduce the codebar number and discover the social impact of what you buy" />
+                  <fieldset className="form-group_container">
+                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autoComplete="off" placeholder="Introduce the codebar number and discover the social impact of what you buy" />
                     <span></span>
                   </fieldset>
-                  <p class="app-home_link" onClick={() => this.props.history.push('/scan')}>
+                  <p className="app-home_link" onClick={() => this.props.history.push('/scan')}>
                     <span>or scan the barcode</span>
                   </p>
                 </div>
@@ -70,6 +71,6 @@ export default class Home extends Component {
     }
     return this.state.products
       .filter(product => product.name.toLowerCase().includes(this.state.input.toLowerCase()))
-      .map((product, index) => <Product onClick={() => this.props.history.push(`/details/${product.name}`)} key={index} name={product.name} src={product.src}></Product>);
+      .map((product, index) => <Product history={this.props.history} id={product.id} key={index} name={product.name} src={product.src}></Product>);
   }
 }

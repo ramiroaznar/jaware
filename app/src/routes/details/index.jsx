@@ -18,8 +18,7 @@ export default class Details extends Component {
     }
     return (
       <main className="app-details">
-        {/*        <Banner type={this.state.type}></Banner>
-*/}     <aside className="details__img-wrapper">
+        <aside className="details__img-wrapper">
           <div onClick={() => this.props.history.push('/')} className="details__imgBack">
             <img src={arrow} />
           </div>

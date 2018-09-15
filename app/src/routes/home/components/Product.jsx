@@ -14,6 +14,6 @@ export default class Product extends Component {
   }
 
   onClick() {
-    console.log('CLICK');
+    this.props.history.push(`/details/${this.props.id}`);
   }
 }
