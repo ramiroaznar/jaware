@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 // import Banner from './components/Banner';
-import DATA from './data';
+import products from '../../state/products';
 import arrow from './img/arrow.svg';
-
 
 import './details.css';
 
 export default class Details extends Component {
   constructor(props) {
     super(props);
-    this.state = DATA[props.match.params.id]
+
+    this.state = products.find(product => product.id == props.match.params.id);
   }
 
   render() {
@@ -28,12 +28,12 @@ export default class Details extends Component {
         <section className="details__section-wrapper">
           <h1 className="details__title">{this.state.name}</h1>
           <ul className="details__labels">
-            {this.state.badges.map((label, index) => <li key={index} className={label.type}> {label.text} </li>)}
+            {this.state.badges && this.state.badges.map((label, index) => <li key={index} className={label.type}> {label.text} </li>)}
           </ul>
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Impacto ecológico</h3>
-            <p className="details__sectionText">{this.state.eco_info}</p>
+            <p className="details__sectionText">{this.state.description}</p>
           </div>
 
           <div className="details__section">
