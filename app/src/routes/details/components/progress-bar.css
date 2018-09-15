@@ -21,8 +21,13 @@
   align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .progress-barContainer {
+    justify-content: space-between;
+  }
   .progress-bar {
-    margin-left: 0;
+    width: auto;
+    flex: 1;
+    margin-right: 16px;
   }
 }

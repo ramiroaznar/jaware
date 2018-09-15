@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 ol, ul {
   list-style: none;
