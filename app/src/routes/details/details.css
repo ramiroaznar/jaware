@@ -71,9 +71,7 @@
 .details__listItem {
   font: 16px/1.4 'Karla';
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 60%;
+  width: 60%;
 }
 
   .details__listItem a {
@@ -106,7 +104,8 @@
   }
 
 .details__listItem-link-wrapper {
-  flex: 1;
+  display: inline-block;
+  width: 35%;
 }
 
 
@@ -114,5 +113,9 @@
   .app-details {
     flex-direction: column;
     overflow: auto;
+  }
+
+  .details__listItem-link-wrapper {
+    width: 100%;
   }
 }

@@ -4,7 +4,7 @@ import './progress-bar.css';
 export default class ProgressBar extends Component {
   render() {
     const style = {
-      width: this.props.value
+      width: `${this.props.value}%`,
     }
     return (
       <div className="progress-bar">
