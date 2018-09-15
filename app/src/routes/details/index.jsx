@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Banner from './components/Banner';
+// import Banner from './components/Banner';
 import DATA from './data';
 import arrow from './img/arrow.svg';
+
 
 import './details.css';
 
@@ -19,6 +20,9 @@ export default class Details extends Component {
       <main className="app-details">
         {/*        <Banner type={this.state.type}></Banner>
 */}     <aside className="details__img-wrapper">
+          <div className="details__imgBack">
+            <img src={arrow} />
+          </div>
           <img className="details__img" src={this.state.img_url} alt={this.state.name} />
         </aside>
 

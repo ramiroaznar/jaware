@@ -8,7 +8,14 @@
   justify-content: center;
   flex: 0 0 40%;
   overflow: hidden;
+  position: relative;
 }
+  .details__imgBack {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    cursor: pointer;
+  }
 
   .details__img {
     height: 100%;
@@ -60,6 +67,24 @@
     align-items: center;
   }
 
-  .details__listItem a img {
-    margin-right: 8px;
+  .details__listItem span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .details__listItem span:after {
+    transition: all .25s cubic-bezier(.4,.01,.165,.99);
+    content:'';
+    position: absolute;
+    background: #E9554C;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+  .details__listItem:hover span:after {
+    transform: scaleX(1);
   }

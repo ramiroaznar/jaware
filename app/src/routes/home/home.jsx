@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Product from './components/Product';
 import './home.css';
-import arrow from './img/arrow.svg';
 import bg from './img/bg.jpg';
 
 export default class Home extends Component {
