@@ -34,7 +34,7 @@ export default class AnimalMap extends Component {
     this.getData();
     const map = new window.mapboxgl.Map({
       container: 'map',
-      style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+      style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
       center: [110, 6.5],
       zoom: 3,
       dragRotate: false,
@@ -49,7 +49,7 @@ export default class AnimalMap extends Component {
     // Define layer
     const source = new window.carto.source.Dataset('mammals_spps');
     const viz = new window.carto.Viz(`
-      color: red,
+      color: #F3522B,
       strokeWidth: 0,
       filter: $name == '${this.props.match.params.id}'
     `);
