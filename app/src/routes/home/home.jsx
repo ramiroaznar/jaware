@@ -19,7 +19,7 @@ export default class Home extends Component {
       <React.Fragment>
         <div className="app-home_container">
           <main className="app-home">
-            <div className="app-inner">
+            <div className={"app-inner " + (this.state.input ? 'search--active' : '')}>
               <header className="app-home__header">
                 <h1 className="app-home_title">Jaware</h1>
               </header>
@@ -33,12 +33,13 @@ export default class Home extends Component {
                     <span>or scan the barcode</span>
                   </p>
                 </div>
-                <ul className="app-home__results">
-                  {this.getResults()}
-                </ul>
               </div>
+              <ul className={"app-home__results " + (this.state.input ? 'search--active' : '')}>
+                {this.getResults()}
+              </ul>
             </div>
           </main>
+
           <aside className="app-home_media">
             <img src={bg} alt="" />
           </aside>

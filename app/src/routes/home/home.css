@@ -5,7 +5,6 @@
 .app-home {
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   background: #fff;
   flex: 0 0 50%;
@@ -16,6 +15,12 @@
   max-width: 800px;
   width: 100%;
   padding: 0 80px;
+  margin-top: 50%;
+  transition: margin-top .5s;
+}
+
+.app-inner.search--active {
+  margin-top: 32px;
 }
 
 .app-home_subheader {
@@ -49,13 +54,18 @@
 }
 
 .app-home__results {
-  position: absolute;
-  left: 0;
-  right: 0;
+  opacity: 0;
+  font-family: 'Karla';
+  margin-top: 32px;
   background: #fff;
-  top: 100%;  
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
+}
+
+.app-home__results.search--active {
+  animation: fadeIn;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
 }
 
 .app-home_input {
@@ -139,4 +149,23 @@
 
   .app-home_link img {
     margin-right: 8px;
+  }
+
+
+  .product {
+    margin: 8px auto;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .product:hover {
+    background: #f2f2f2;
+  }
+
+  @keyframes fadeIn {
+  0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
