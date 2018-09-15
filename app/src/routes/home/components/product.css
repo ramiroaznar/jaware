@@ -1,0 +1,19 @@
+.product {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(44, 44, 44, 0.16);
+  height: 48px;
+}
+
+.product__img {
+  max-width: 48px;
+  padding: 8px;
+}
+
+.product__data {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}

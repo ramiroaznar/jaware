@@ -1,0 +1,19 @@
+.app-home {
+  padding: 48px;
+}
+
+.app-home__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-home__form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.app-home .form-group {
+  display: flex;
+  margin-bottom: 16px;
+}

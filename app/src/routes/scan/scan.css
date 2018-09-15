@@ -1,0 +1,15 @@
+.app-scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  height: 100%;
+}
+
+.app-scan .viewport {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+}

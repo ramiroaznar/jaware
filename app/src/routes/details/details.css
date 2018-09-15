@@ -1,0 +1,24 @@
+.app-details {
+  height: 100%;
+}
+
+.details__data {
+  padding: 16px;
+}
+
+.details__img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #f2f2f2;
+  height: 30%;
+  padding: 8px 0;
+}
+
+.details__img {
+  height: 100%;
+}
+
+.details__section {
+  margin-top: 16px;
+}
