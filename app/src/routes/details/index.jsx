@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ProgressBar from './components/ProgressBar';
 import products from '../../state/products';
 import arrow from './img/arrow.svg';
+import non_product from './img/non-product.png';
 
 import './details.css';
 
@@ -14,7 +15,18 @@ export default class Details extends Component {
 
   render() {
     if (!this.state) {
-      return <h1 className="as-jumbo">Producto no encontrado</h1>
+      return (
+        <section className="non-product">
+          <div className="non-product_text">
+            <h1 className="non-product_title">Product not found</h1>
+            <a href="#" className="non-product_link"><span>Try again</span></a>
+          </div>
+          
+          <span className="non-product_media">
+            <img src={non_product} />
+          </span>
+        </section>
+      )
     }
     return (
       <main className="app-details">

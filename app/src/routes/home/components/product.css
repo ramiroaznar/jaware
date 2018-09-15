@@ -1,12 +1,13 @@
 .product {
-  display: flex;
-  flex-direction: row;
   cursor: pointer;
-  height: 48px;
+  transition: all .25s cubic-bezier(.4,.01,.165,.99);
 }
-  .product:last-child {
-    border: 0;
+
+  .product:hover {
+    background: #E9554C;
+    color: #FFF;
   }
+
 
 .product__img {
   max-width: 48px;
@@ -16,5 +17,5 @@
 .product__data {
   display: flex;
   align-items: center;
-  margin-left: 16px;
+  padding: 12px;
 }
