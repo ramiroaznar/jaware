@@ -1,7 +1,7 @@
 .progress-bar {
   flex: 1;
-  position: relative;
   width: 100%;
+  position: relative;
   height: 8px;
   background: #f2f2f2;
   border-radius: 4px;
@@ -10,7 +10,6 @@
 
 .progress-bar__value {
   position: absolute;
-  width: 90%;
   height: 100%;
   background: #E9554C;
   border-radius: 4px;

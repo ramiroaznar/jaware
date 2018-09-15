@@ -104,3 +104,7 @@
   .details__listItem:hover span:after {
     transform: scaleX(1);
   }
+
+.details__listItem-link-wrapper {
+  flex: 1;
+}

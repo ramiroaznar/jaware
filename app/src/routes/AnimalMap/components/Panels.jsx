@@ -22,8 +22,8 @@ export default class Sidebar extends Component {
           <p className="as-badge as-bg--warning"> {this.props.status} </p>
           <h2 className="as-subheader">Population:</h2>
           <p className="as-body">{this.props.population}</p>
-          <h2 className="as-subheader">Solapamiento:</h2>
-          <p className="as-body">{this.props.solap}</p>
+          <h2 className="as-subheader">Habitat Loss:</h2>
+          <p className="as-body">{this.props.overlap} %</p>
         </div>
       </div >
     );

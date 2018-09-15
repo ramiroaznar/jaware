@@ -47,7 +47,7 @@ export default class AnimalMap extends Component {
     });
 
     // Define layer
-    const source = new window.carto.source.Dataset('endangered_spp');
+    const source = new window.carto.source.Dataset('mammals_spps');
     const viz = new window.carto.Viz(`
       color: red,
       strokeWidth: 0,
@@ -81,7 +81,7 @@ export default class AnimalMap extends Component {
   }
 
   getData() {
-    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap, x, y FROM endangered_spp WHERE name LIKE '${this.state.name}'`)
+    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap, x, y FROM mammals_spps WHERE name LIKE '${this.state.name}'`)
       .then(raw => raw.json())
       .then(response => {
         const { description, overlap, population, species, status, x, y } = response.rows[0];
