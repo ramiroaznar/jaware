@@ -27,10 +27,8 @@ export default class Details extends Component {
         </aside>
 
         <section className="details__section-wrapper">
-          <h1 className="details__title">{this.state.name}</h1>
-          <ul className="details__labels">
-            {this.state.badges.map((label, index) => <li key={index} className={label.type}> {label.text} </li>)}
-          </ul>
+            <h2 className="details__subtitle">CREMA</h2>
+            <h1 className="details__title">{this.state.name}</h1>
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Impacto ecológico</h3>
@@ -39,7 +37,7 @@ export default class Details extends Component {
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Ingredientes dañinos</h3>
-            <p className="details__sectionText">Aceite de Palma</p>
+            <p className="details__sectionText"><span class="as-badge as-bg--error">Aceite de Palma</span></p>
           </div>
 
 
