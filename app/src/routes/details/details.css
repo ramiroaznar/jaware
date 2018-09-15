@@ -108,3 +108,11 @@
 .details__listItem-link-wrapper {
   flex: 1;
 }
+
+
+@media (max-width: 480px) {
+  .app-details {
+    flex-direction: column;
+    overflow: auto;
+  }
+}
