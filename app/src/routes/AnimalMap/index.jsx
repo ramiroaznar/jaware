@@ -54,7 +54,7 @@ export default class AnimalMap extends Component {
       filter: $name == '${this.props.match.params.id}'
     `);
 
-    this.setState({ viz });
+    this.setState({ viz, map });
     const layer = new window.carto.Layer('layer', source, viz);
 
     layer.addTo(map, 'watername_ocean');
@@ -81,17 +81,24 @@ export default class AnimalMap extends Component {
   }
 
   getData() {
-    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap FROM endangered_spp WHERE name LIKE '${this.state.name}'`)
+    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap, x, y FROM endangered_spp WHERE name LIKE '${this.state.name}'`)
       .then(raw => raw.json())
       .then(response => {
-        const { description, overlap, population, species, status } = response.rows[0];
+        const { description, overlap, population, species, status, x, y } = response.rows[0];
         this.setState({
           sname: species,
           text: description,
           population: population,
           status: status,
           overlap
-        })
+        });
+        console.log(x, y);
+        if (x && y) {
+          this.state.map.flyTo({
+            center: [x, y],
+            zoom: 5,
+          });
+        }
       });
   }
 }
