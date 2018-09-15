@@ -171,5 +171,8 @@
   }
 
   @media (max-width: 480px) {
-
+    .app-inner {
+      padding: 42px;
+      width: 100vw;
+    }
   }

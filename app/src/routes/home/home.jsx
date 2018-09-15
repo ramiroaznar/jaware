@@ -26,7 +26,7 @@ export default class Home extends Component {
               <div className="app-home__form">
                 <div className="form-group">
                   <fieldset className="form-group_container">
-                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autoComplete="off" placeholder="Introduce the codebar number and discover the social impact of what you buy" />
+                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autoComplete="off" placeholder="Search for a product to discover it's impact" />
                     <span></span>
                   </fieldset>
                   <p className="app-home_link" onClick={() => this.props.history.push('/scan')}>
