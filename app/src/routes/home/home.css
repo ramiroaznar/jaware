@@ -116,8 +116,25 @@
   cursor: pointer;
   color: #E9554C;
 }
-  .app-home_link:hover span {
-    text-decoration: underline;
+  .app-home_link span {
+    position: relative;
+  }
+
+  .app-home_link span:after {
+    transition: all .25s cubic-bezier(.4,.01,.165,.99);
+    content:'';
+    position: absolute;
+    height: 1px;
+    background: #E9554C;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+  .app-home_link:hover span:after {
+    transform: scaleX(1);
   }
 
   .app-home_link img {

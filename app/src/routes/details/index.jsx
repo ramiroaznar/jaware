@@ -42,7 +42,7 @@ export default class Details extends Component {
           <div className="details__section">
             <h3 className="details__sectionTitle">Animales afectados</h3>
             <ul className="details__list">
-              {this.state.afected_animals.map((animal, index) => <li key={index}  className="details__listItem"><a href={animal.href}>                    <img src={arrow} />
+              {this.state.afected_animals.map((animal, index) => <li key={index}  className="details__listItem"><a href={animal.href}>
  <span>{animal.name}</span></a></li>)}
             </ul>
           </div>

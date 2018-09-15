@@ -38,11 +38,10 @@ export default class Home extends Component {
               <div className="app-home__form">
                 <div className="form-group">
                   <fieldset class="form-group_container">
-                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" placeholder="Discover the social impact of you buy or consume." />
+                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autocomplete="off" placeholder="Introduce the codebar number and discover the social impact of what you buy" />
                     <span></span>
                   </fieldset>
                   <p class="app-home_link" onClick={() => this.props.history.push('/scan')}>
-                    <img src={arrow} />
                     <span>or scan the barcode</span>
                   </p>
                 </div>
