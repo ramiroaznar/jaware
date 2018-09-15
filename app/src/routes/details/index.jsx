@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Banner from './components/Banner';
 import DATA from './data';
+import arrow from './img/arrow.svg';
 
 import './details.css';
 
@@ -16,29 +17,36 @@ export default class Details extends Component {
     }
     return (
       <main className="app-details">
-        <Banner type={this.state.type}></Banner>
-        <div className="details__img-wrapper">
+{/*        <Banner type={this.state.type}></Banner>
+*/}     <aside className="details__img-wrapper">
           <img className="details__img" src={this.state.img_url} alt={this.state.name} />
-        </div>
+        </aside>
 
-        <div className="details__section">
-          <h1 className="as-title">{this.state.name}</h1>
-          <div className="details__labels">
-            {this.state.badges.map((label, index) => <span key={index} className={label.type}> {label.text} </span>)}
+        <section className="details__section-wrapper">
+            <h1 className="details__title">{this.state.name}</h1>
+            <ul className="details__labels">
+              {this.state.badges.map((label, index) => <li key={index} className={label.type}> {label.text} </li>)}
+            </ul>
+
+          <div className="details__section">
+            <h3 className="details__sectionTitle">Impacto ecológico</h3>
+            <p className="details__sectionText">{this.state.eco_info}</p>
           </div>
-        </div>
 
-        <div className="details__section">
-          <h3 className="as-subheader">Impacto ecológico</h3>
-          <p className="as-body">{this.state.eco_info}</p>
-        </div>
+          <div className="details__section">
+            <h3 className="details__sectionTitle">Ingredientes dañinos</h3>
+            <p className="details__sectionText">Aceite de Palma</p>
+          </div>
+          
 
-        <div className="details__section">
-          <h3 className="as-subheader">Animales afectados</h3>
-          <ul className="as-list">
-            {this.state.afected_animals.map((animal, index) => <li key={index}  className="as-list__item"><a href={animal.href}>{animal.name}</a></li>)}
-          </ul>
-        </div>
+          <div className="details__section">
+            <h3 className="details__sectionTitle">Animales afectados</h3>
+            <ul className="details__list">
+              {this.state.afected_animals.map((animal, index) => <li key={index}  className="details__listItem"><a href={animal.href}>                    <img src={arrow} />
+ <span>{animal.name}</span></a></li>)}
+            </ul>
+          </div>
+        </section>
       </main>
     );
   }

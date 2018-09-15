@@ -37,9 +37,12 @@ export default class Home extends Component {
               </header>
               <div className="app-home__form">
                 <div className="form-group">
-                  <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" placeholder="Discover the social impact of you buy or consume." />
-                  <p className="app-home_link" onClick={() => this.props.history.push('/scan')}>
-                    <img src={arrow} alt="arrow"/>
+                  <fieldset class="form-group_container">
+                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" placeholder="Discover the social impact of you buy or consume." />
+                    <span></span>
+                  </fieldset>
+                  <p class="app-home_link" onClick={() => this.props.history.push('/scan')}>
+                    <img src={arrow} />
                     <span>or scan the barcode</span>
                   </p>
                 </div>

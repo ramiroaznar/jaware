@@ -2,21 +2,21 @@ export default {
   '0012345678905': {
     name: 'Nocilla',
     type: 'warning',
-    img_url: 'https://static.condisline.com/resize_1280x1024/images/catalog/large/207523.jpg',
+    img_url: 'https://littlebuddhaagency.com/wp-content/uploads/2016/09/LB_NOCILLA_ORIGINAL_1440x913.px_.jpg',
     badges: [{
-        type: 'as-badge as-bg--badge-green',
+        type: 'details__labelsItem as-badge as-bg--badge-green',
         text: 'Reciclable'
       },
       {
-        type: 'as-badge as-bg--badge-blue',
+        type: 'details__labelsItem as-badge as-bg--badge-blue',
         text: 'Auténtica'
       },
       {
-        type: 'as-badge as-bg--warning',
+        type: 'details__labelsItem as-badge as-bg--warning',
         text: 'Insano'
       },
       {
-        type: 'as-badge as-bg--error',
+        type: 'details__labelsItem as-badge as-bg--error',
         text: 'Defaunación'
       },
     ],
