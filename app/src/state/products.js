@@ -8,9 +8,12 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 90,
     }, {
-      name: 'Malayan tapir'
+      name: 'Malayan tapir',
+      value: 90,
+
     }],
   },
   {
@@ -23,9 +26,12 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 25,
+
     }, {
-      name: 'Malayan tapir'
+      name: 'Malayan tapir',
+      value: 90,
     }],
   },
   {
@@ -38,12 +44,15 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 35,
+
     }, {
-      name: 'Malayan tapir'
+      name: 'Malayan tapir',
+      value: 85,
+
     }],
   },
-
   {
     id: 88518247,
     "cartodb_id": 4,
@@ -54,14 +63,15 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-        name: 'Sumatran orangutan'
+        name: 'Sumatran orangutan',
+        value: 40,
       },
       {
-        name: 'Asian elephant'
+        name: 'Asian elephant',
+        value: 80,
       }
     ],
   },
-
   {
     id: 20854907,
     "cartodb_id": 5,
@@ -72,14 +82,15 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-        name: 'Sumatran orangutan'
+        name: 'Sumatran orangutan',
+        value: 80,
       },
       {
-        name: 'Asian elephant'
+        name: 'Asian elephant',
+        value: 48,
       }
     ],
   },
-
   {
     id: 99042755,
     "cartodb_id": 6,
@@ -90,14 +101,15 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-        name: 'Sumatran orangutan'
+        name: 'Sumatran orangutan',
+        value: 78,
       },
       {
-        name: 'Asian elephant'
+        name: 'Asian elephant',
+        value: 38,
       }
     ],
   },
-
   {
     id: 72629441,
     "cartodb_id": 7,
@@ -108,10 +120,10 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 13,
     }],
   },
-
   {
     id: 94450566,
     "cartodb_id": 8,
@@ -122,10 +134,10 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 98,
     }],
   },
-
   {
     id: 28453540,
     "cartodb_id": 9,
@@ -136,9 +148,11 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 88,
     }],
-  }, {
+  },
+  {
     id: 3025793,
     "cartodb_id": 10,
     "name": "Cornetto clásico",
@@ -148,7 +162,8 @@ export default [{
     "ingredients": "palm oil",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
     afected_animals: [{
-      name: 'Sumatran orangutan'
+      name: 'Sumatran orangutan',
+      value: 98,
     }],
   }
 ]

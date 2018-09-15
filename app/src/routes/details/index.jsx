@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Banner from './components/Banner';
+import ProgressBar from './components/ProgressBar';
 import products from '../../state/products';
 import arrow from './img/arrow.svg';
 
@@ -26,8 +26,8 @@ export default class Details extends Component {
         </aside>
 
         <section className="details__section-wrapper">
-            <h2 className="details__subtitle">CREMA</h2>
-            <h1 className="details__title">{this.state.name}</h1>
+          <h2 className="details__subtitle">CREMA</h2>
+          <h1 className="details__title">{this.state.name}</h1>
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Impacto ecológico</h3>
@@ -35,23 +35,26 @@ export default class Details extends Component {
           </div>
 
           <div className="details__section">
-            <h3 className="details__sectionTitle">Ingredientes dañinos</h3>
-            <p className="details__sectionText"><span class="as-badge as-bg--error">Aceite de Palma</span></p>
-          </div>
-
-
-          <div className="details__section">
             <h3 className="details__sectionTitle">Animales afectados</h3>
             <ul className="details__list">
-              {this.state.afected_animals.map((animal, index) => <li key={index} className="details__listItem">
-                <a href={`/map/${animal.name}`}>
-                  <span>{animal.name}</span>
-                </a>
-              </li>)}
+              {this.getAnimals()}
             </ul>
           </div>
         </section>
       </main>
     );
+  }
+
+  getAnimals() {
+    return this.state.afected_animals.map((animal, index) => {
+      return (<li key={index} className="details__listItem">
+        <div className="details__listItem-link-wrapper">
+          <a href={`/map/${animal.name}`}>
+            <span>{animal.name}</span>
+          </a>
+        </div>
+        <ProgressBar value={animal.value}></ProgressBar>
+      </li>)
+    });
   }
 }

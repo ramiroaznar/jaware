@@ -71,7 +71,11 @@
 .details__listItem {
   font: 16px/1.4 'Karla';
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 60%;
 }
+
   .details__listItem a {
     color: #E9554C;
     text-decoration: none;
