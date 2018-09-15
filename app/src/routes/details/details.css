@@ -1,22 +1,65 @@
 .app-details {
   height: 100%;
+  display: flex;
 }
 
 .details__img-wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid #f2f2f2;
-  height: 30%;
-  padding: 8px 0;
+  flex: 0 0 40%;
+  overflow: hidden;
 }
 
-.details__img {
-  height: 100%;
+  .details__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+.details__section-wrapper {
+  flex: 0 0 60%;
+  padding: 40px;
 }
 
+.details__title {
+  font: 80px/1 'Merriweather';
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
 .details__section {
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-bottom: 40px;
 }
+
+.details__labels {
+  margin-bottom: 80px;
+}
+.details__labelsItem {
+  margin-right: 20px
+}
+  .details__labelsItem:last-child {
+    margin-right: 0;
+  }
+
+.details__sectionTitle {
+  font: 600 22px/1.4 'Karla';
+  margin-bottom: 14px;
+}
+.details__sectionText {
+  font: 16px/1.4 'Karla';
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.details__listItem {
+  font: 16px/1.4 'Karla';
+  margin-bottom: 20px;
+}
+  .details__listItem a {
+    color: #E9554C;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .details__listItem a img {
+    margin-right: 8px;
+  }
