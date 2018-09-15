@@ -24,14 +24,11 @@ export default {
     rápidamente el hábitat de los orangutanes en la selva, que se encuentran en peligro crítico,
    puesto que más del 90% de su hábitat ha sido destruido en los últimos 20 años.`,
     afected_animals: [{
-        name: 'Orangutan',
-        href: ''
+        name: 'Sumatran orangutan',
       },
       {
         name: 'jaguar',
-        href: ''
       },
     ]
   },
-
 }
