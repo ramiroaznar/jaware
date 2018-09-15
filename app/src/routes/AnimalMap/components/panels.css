@@ -1,5 +1,4 @@
 .as-panels {
-  pointer-events: all;
   overflow: auto;
 }
 
@@ -11,3 +10,55 @@
 .as-panel__element.as-bg--support-01 {
   color: white;
 }
+
+.app-map_header .as-title {
+  font: 600 24px/32px 'Karla';
+  margin: 0;
+  color: #fff;
+}
+
+.app-map_header {
+  background: #E95544;
+  margin: -16px -16px 16px -16px;
+  padding: 16px;
+
+}
+.app-map_header .as-subheader {
+  font: 12px/18px 'Karla';
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.app-map .as-panel__element {
+  border-radius: 0;
+}
+
+
+  .app-map_list dd {
+    margin-bottom: 16px;
+  }
+  .app-map_list dd:last-child {
+    margin-bottom: 0;
+  }
+  .app-map_list .as-subheader {
+    font:600 14px/24px 'Karla';
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .app-map_list .as-body {
+    font: 32px/1 'Karla';
+  }
+  .app-map_text {
+    font: 14px/18px 'Karla';
+    margin: 0 0 16px 0;
+  }
+  .app-map_headerTitle {
+    display: flex;
+    align-items: flex-start;
+  }
+  .as-badge {
+    margin-bottom: 16px;
+    margin-top: 8px;
+    font-family: 'Karla'
+  }
