@@ -21,7 +21,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>React App</title>
-  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script crossorigin src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <!-- Include CARTO VL JS -->
+  <script crossorigin src="https://libs.cartocdn.com/carto-vl/v0.8.0/carto-vl.min.js"></script>
+  <!-- Include Mapbox GL JS -->
+  <script crossorigin src="https://libs.cartocdn.com/mapbox-gl/v0.48.0-carto1/mapbox-gl.js"></script>
+  <!-- Include Mapbox GL CSS -->
+  <link href="https://libs.cartocdn.com/mapbox-gl/v0.48.0-carto1/mapbox-gl.css" rel="stylesheet" />
+  <link href="https://carto.com/developers/carto-vl/examples/maps/style.css" rel="stylesheet">
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>

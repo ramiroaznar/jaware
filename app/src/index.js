@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './routes/home/home';
 import Details from './routes/details';
 import Scan from './routes/scan';
-import Map from './routes/map';
+import AnimalMap from './routes/AnimalMap';
 
 
 ReactDOM.render(
@@ -19,7 +19,7 @@ ReactDOM.render(
     <Route exact path="/" component={Home}/>
     <Route exact path="/scan" component={Scan}/>
     <Route exact path="/details/:id" component={Details}/>
-    <Route exact path="/map" component={Map}/>
+    <Route exact path="/map/:id" component={AnimalMap}/>
   </React.Fragment>
 </Router>,
 document.getElementById('root'));

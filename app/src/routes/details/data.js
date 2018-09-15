@@ -1,5 +1,5 @@
 export default {
-  1234: {
+  '0012345678905': {
     name: 'Nocilla',
     type: 'warning',
     img_url: 'https://static.condisline.com/resize_1280x1024/images/catalog/large/207523.jpg',

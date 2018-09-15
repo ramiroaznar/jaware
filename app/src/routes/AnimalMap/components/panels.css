@@ -1,0 +1,13 @@
+.as-panels {
+  pointer-events: all;
+  overflow: auto;
+}
+
+.as-panel__element {
+  padding: 16px;
+  min-width: 260px;
+}
+
+.as-panel__element.as-bg--support-01 {
+  color: white;
+}
