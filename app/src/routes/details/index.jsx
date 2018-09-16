@@ -3,6 +3,8 @@ import ProgressBar from './components/ProgressBar';
 import products from '../../state/products';
 import arrow from './img/arrow.svg';
 import non_product from './img/non-product.png';
+import check from './img/check.svg';
+import alert from './img/alert.svg';
 
 import './details.css';
 
@@ -37,6 +39,9 @@ export default class Details extends Component {
           <img className="details__img" src={this.state.img_url} alt={this.state.name} />
         </aside>
 
+
+
+
         <section className="details__section-wrapper">
           <div className="details-section_header">
             <div className="details-section_headerTitles">
@@ -44,9 +49,11 @@ export default class Details extends Component {
               <h1 className="details__title">{this.state.name}</h1>
             </div>
             <div className="details-section_headerInfo">
-              <h3 className="details-section_headerNumber">98%</h3>
               <ul className="details-section_headerProducts">
-                <li className="is-active">Oil Palm</li>
+                <li className="is-active">
+                  <img src={alert} />
+                  Oil Palm
+                </li>
                 <li>Soy</li>
                 <li>Biodiesel</li>
               </ul>
@@ -64,6 +71,25 @@ export default class Details extends Component {
               {this.getAnimals()}
             </ul>
           </div>
+
+          <div className="details__section">
+            <h3 className="details__sectionTitle">Productos sustitutivos</h3>
+            <ul className="details__listSubstitute">
+              <li className="details__listSubstituteItem">
+                <img src={check} />
+                <h4>Galletas sin azucar</h4>
+              </li>
+              <li className="details__listSubstituteItem">
+                <img src={check} />
+                <h4>Galletas sin azucar</h4>
+              </li>
+              <li className="details__listSubstituteItem">
+                <img src={check} />
+                <h4>Galletas sin azucar</h4>
+              </li>
+            </ul>
+          </div>
+
         </section>
       </main>
     );
