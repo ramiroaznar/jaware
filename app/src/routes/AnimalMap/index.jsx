@@ -47,22 +47,36 @@ export default class AnimalMap extends Component {
     });
 
     // Define layer
-    const source = new window.carto.source.Dataset('mammals_spps_evo');
+    const source = new window.carto.source.Dataset('habitat_loss');
     const viz = new window.carto.Viz(`
       color: #F3522B,
       strokeWidth: 0,
       filter: and(
         animation(
-          linear($cartodb_id, 1, 88), 5, fade(2, 2)
-        ) > 0,
+          linear($cartodb_id, 1, 88), 10, fade(1, 1)
+        ),
         $name == '${this.props.match.params.id}'
         )
+    `);
+
+    // Palm trees
+    // Define layer
+    const source_palm = new window.carto.source.Dataset('palm_oil_mills');
+    const viz_palm = new window.carto.Viz(`
+      color: green,
+      width: 20,
+      strokeWidth: 0,
+      symbol: image('/palm.svg')
+      filter: animation($cartodb_id, 10, fade(1, 100000))
     `);
 
     this.setState({ viz, map });
     const layer = new window.carto.Layer('layer', source, viz);
 
+    const layer_palm = new window.carto.Layer('layer_palm', source_palm, viz_palm);
+
     layer.addTo(map, 'watername_ocean');
+    layer_palm.addTo(map, 'watername_ocean');
   }
 
   showMap() {
