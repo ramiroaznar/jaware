@@ -30,7 +30,7 @@ export default class Sidebar extends Component {
                 <dd className="as-body">{this.props.overlap} % </dd>
               </dl>
             </div>
-            <as-histogram-widget heading="Population" show-header> </as-histogram-widget>
+            <as-histogram-widget color="#F3522B" heading="Population" show-header> </as-histogram-widget>
           </div>
         </div>
       </div>
