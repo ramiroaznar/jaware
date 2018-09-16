@@ -55,7 +55,7 @@ export default class Details extends Component {
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Ecological impact</h3>
-            <h3 className="details__subtitle">Palm Oil</h3>
+            {/* <h3 className="details__subtitle">Palm Oil</h3> */}
             <p className="details__sectionText">{this.state.description}</p>
           </div>
 
