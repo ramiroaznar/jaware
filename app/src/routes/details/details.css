@@ -209,6 +209,26 @@
   margin-right: 10px;
 }
 
+@media (max-width: 1200px) {
+  .details-section_headerTitles {
+    max-width: 80%;
+  }
+  .details-section_header {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .details__title {
+    margin-bottom: 24px;
+  }
+  .details-section_headerInfo {
+    align-items: flex-start;
+  }
+  .details-section_headerProducts li{
+    margin: 0;
+    margin-right: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .app-details {
     flex-direction: column;
