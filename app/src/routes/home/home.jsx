@@ -27,7 +27,7 @@ export default class Home extends Component {
               <div className="app-home__form">
                 <form className="form-group">
                   <fieldset className="form-group_container">
-                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autoComplete="off" placeholder="Search for a product to discover it's impact" />
+                    <input value={this.state.input} onChange={this.onChangeHandler.bind(this)} className="app-home_input" type="text" name="search" id="search" autoComplete="off" placeholder="Search for a product to discover it's impact" aria-label="Search" />
                     <span></span>
                   </fieldset>
                   <p className="app-home_link" onClick={() => this.props.history.push('/scan')}>
@@ -42,8 +42,8 @@ export default class Home extends Component {
           </main>
 
           <aside className="app-home_media">
-            <img src={bg} alt="" class="app-home_media--desktop" />
-            <img src={bg_mobile} alt="" class="app-home_media--mobile" />
+            <img src={bg} alt="" className="app-home_media--desktop" />
+            <img src={bg_mobile} alt="" className="app-home_media--mobile" />
           </aside>
         </div>
       </React.Fragment>
