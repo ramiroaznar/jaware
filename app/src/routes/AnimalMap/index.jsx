@@ -76,21 +76,22 @@ export default class AnimalMap extends Component {
     if (!this.state.sname) {
       return
     }
-    const { name, sname, text, status, population, overlap } = this.state;
-    return <Panels overlap={overlap} name={name} sname={sname} text={text} status={status} population={population} ></Panels>
+    const { name, sname, text, status, population, overlap, img_url } = this.state;
+    return <Panels img_url={img_url} overlap={overlap} name={name} sname={sname} text={text} status={status} population={population} ></Panels>
   }
 
   getData() {
-    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap, x, y FROM mammals_spps WHERE name LIKE '${this.state.name}'`)
+    fetch(`https://ramirocartodb.carto.com/api/v2/sql?q=SELECT name, species, description, status, population, overlap, x, y, img_url FROM mammals_spps WHERE name LIKE '${this.state.name}'`)
       .then(raw => raw.json())
       .then(response => {
-        const { description, overlap, population, species, status, x, y } = response.rows[0];
+        const { description, overlap, population, species, status, x, y, img_url } = response.rows[0];
         this.setState({
           sname: species,
           text: description,
           population: population,
           status: status,
-          overlap
+          overlap,
+          img_url
         });
         console.log(x, y);
         if (x && y) {

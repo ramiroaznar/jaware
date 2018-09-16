@@ -11,40 +11,51 @@
   color: white;
 }
 
+
 .app-map_header .as-title {
   font: 600 24px/32px 'Karla';
   margin: 0;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .app-map_header {
   background: #E95544;
   margin: -16px -16px 16px -16px;
-  padding: 16px;
-
+  padding: 24px 16px;
+  position: relative;
+  overflow: hidden;
 }
 .app-map_header .as-subheader {
   font: 12px/18px 'Karla';
   text-transform: uppercase;
   margin-bottom: 0;
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .app-map .as-panel__element {
   border-radius: 0;
+  max-height: calc(100% - 48px);
+  top: 24px;
+  position: fixed;
+  right: 24px;
+  overflow: scroll;
+  -webkit-overflow: touch;
 }
 
 
   .app-map_list dd {
     margin-bottom: 16px;
   }
-  .app-map_list dd:last-child {
-    margin-bottom: 0;
-  }
-  .app-map_list .as-subheader {
+
+  .app-map_list .as-subheader,
+  .app-map .as-histogram-widget__header {
     font:600 14px/24px 'Karla';
     margin: 0;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
   }
   .app-map_list .as-body {
     font: 32px/1 'Karla';
@@ -61,4 +72,31 @@
     margin-bottom: 16px;
     margin-top: 8px;
     font-family: 'Karla'
+  }
+
+  .app-map_media {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .app-map_media img {
+    width: 100%;
+    object-fit: cover;
+     mix-blend-mode: multiply;
+  }
+  .app-map_description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .as-histogram-widget .as-histogram-widget__wrapper {
+    margin-left:-10px;
+  }
+
+  @media (max-width: 600px) {
+    .app-map .as-panel__element {
+      position: static;
+    }
   }
