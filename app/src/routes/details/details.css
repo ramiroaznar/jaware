@@ -165,7 +165,7 @@
   align-items: flex-start;
 }
   .details-section_headerTitles {
-    max-width: 60%;
+    max-width: 50%;
   }
   .details-section_headerInfo {
     display: flex; 

@@ -25,7 +25,7 @@ export default class Details extends Component {
           </div>
           
           <span className="non-product_media">
-            <img src={non_product} />
+            <img src={non_product} alt=""/>
           </span>
         </section>
       )
@@ -55,18 +55,19 @@ export default class Details extends Component {
                   Oil Palm
                 </li>
                 <li>Soy</li>
-                <li>Biodiesel</li>
+                <li>Livestock Farming</li>
               </ul>
             </div>
           </div>
 
           <div className="details__section">
-            <h3 className="details__sectionTitle">Impacto ecológico</h3>
+            <h3 className="details__sectionTitle">Ecological impact</h3>
+            {/* <h3 className="details__subtitle">Palm Oil</h3> */}
             <p className="details__sectionText">{this.state.description}</p>
           </div>
 
           <div className="details__section">
-            <h3 className="details__sectionTitle">Animales afectados</h3>
+            <h3 className="details__sectionTitle">Affected species</h3>
             <ul className="details__list">
               {this.getAnimals()}
             </ul>

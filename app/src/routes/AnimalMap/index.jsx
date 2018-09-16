@@ -47,7 +47,7 @@ export default class AnimalMap extends Component {
     });
 
     // Define layer
-    const source = new window.carto.source.Dataset('mammals_spps');
+    const source = new window.carto.source.Dataset('mammals_spps_evo');
     const viz = new window.carto.Viz(`
       color: #F3522B,
       strokeWidth: 0,
