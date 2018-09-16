@@ -8,12 +8,36 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
+        name: 'Asian elephant',
+        value: 18.73
+      },
+      {
         name: 'Sumatran orangutan',
-        value: 90,
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
+      },
+      {
+        name: 'Sumatran rhinoceros',
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
       },
       {
         name: 'Malayan tapir',
-        value: 90,
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
   },
@@ -27,12 +51,36 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
+        name: 'Asian elephant',
+        value: 18.73
+      },
+      {
         name: 'Sumatran orangutan',
-        value: 25,
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
+      },
+      {
+        name: 'Sumatran rhinoceros',
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
       },
       {
         name: 'Malayan tapir',
-        value: 90,
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
   },
@@ -46,20 +94,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
+        name: 'Asian elephant',
+        value: 18.73
+      },
+      {
         name: 'Sumatran orangutan',
-        value: 35,
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
+      },
+      {
+        name: 'Sumatran rhinoceros',
+        value: 79.57,
       },
       {
         name: 'Sun bear',
-        value: 85,
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
       },
       {
         name: 'Malayan tapir',
-        value: 85,
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 88518247,
     "cartodb_id": 4,
     "name": "Conchas de Chocolate Codan",
@@ -69,16 +136,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
-        name: 'Sumatran orangutan',
-        value: 40,
+        name: 'Asian elephant',
+        value: 18.73
       },
       {
-        name: 'Asian elephant',
-        value: 80,
+        name: 'Sumatran orangutan',
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
+      },
+      {
+        name: 'Sumatran rhinoceros',
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 20854907,
     "cartodb_id": 5,
     "name": "Donuts",
@@ -88,20 +178,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
-        name: 'Sumatran rhinoceros',
-        value: 80,
+        name: 'Asian elephant',
+        value: 18.73
       },
       {
-        name: 'Asian elephant',
-        value: 48,
+        name: 'Sumatran orangutan',
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
+      },
+      {
+        name: 'Sumatran rhinoceros',
+        value: 79.57,
       },
       {
         name: 'Sun bear',
-        value: 78,
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 99042755,
     "cartodb_id": 6,
     "name": "Smacks",
@@ -111,20 +220,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
+        name: 'Asian elephant',
+        value: 18.73
+      },
+      {
         name: 'Sumatran orangutan',
-        value: 78,
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
       },
       {
         name: 'Sumatran rhinoceros',
-        value: 66,
+        value: 79.57,
       },
       {
-        name: 'Asian elephant',
-        value: 38,
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 72629441,
     "cartodb_id": 7,
     "name": "Ruffles",
@@ -134,16 +262,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
-        name: 'Sumatran rhinoceros',
-        value: 13,
+        name: 'Asian elephant',
+        value: 18.73
       },
       {
         name: 'Sumatran orangutan',
-        value: 13,
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
+      },
+      {
+        name: 'Sumatran rhinoceros',
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 94450566,
     "cartodb_id": 8,
     "name": "Pan Bimbo",
@@ -153,20 +304,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
-        name: 'Sun bear',
-        value: 98,
+        name: 'Asian elephant',
+        value: 18.73
+      },
+      {
+        name: 'Sumatran orangutan',
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
       },
       {
         name: 'Sumatran rhinoceros',
-        value: 66,
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
       },
       {
         name: 'Sunda pangolin',
-        value: 96,
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 28453540,
     "cartodb_id": 9,
     "name": "Nocilla",
@@ -176,20 +346,39 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
+        name: 'Asian elephant',
+        value: 18.73
+      },
+      {
         name: 'Sumatran orangutan',
-        value: 88,
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
       },
       {
         name: 'Sumatran rhinoceros',
-        value: 66,
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
       },
       {
         name: 'Sunda pangolin',
-        value: 96,
+        value: 93.07
       }
     ],
-  },
-  {
+  }, {
     id: 3025793,
     "cartodb_id": 10,
     "name": "Cornetto clásico",
@@ -199,16 +388,36 @@ export default [{
     "ingredients": "palm oil",
     "description": "The industry is linked to major issues such as deforestation, habitat degradation, climate change, animal cruelty and indigenous rights abuses in the countries where it is produced, as the land and forests must be cleared for the development of the oil palm plantations. According to the World Wildlife Fund, an area the equivalent size of 300 football fields of rainforest is cleared each hour to make way for palm oil production. This large-scale deforestation is pushing many species to extinction, and findings show that if nothing changes species like the orangutan could become extinct in the wild within the next 5-10 years, and Sumatran tigers less than 3 years.",
     afected_animals: [{
-        name: 'Sumatran orangutan',
-        value: 98,
+        name: 'Asian elephant',
+        value: 18.73
       },
       {
-        name: 'Sunda pangolin',
-        value: 96,
+        name: 'Sumatran orangutan',
+        value: 9.62
+      },
+      {
+        name: 'Bornean orangutan',
+        value: 67.28,
       },
       {
         name: 'Sumatran rhinoceros',
-        value: 66,
+        value: 79.57,
+      },
+      {
+        name: 'Sun bear',
+        value: 3.56
+      },
+      {
+        name: 'Tapanuli orangutan',
+        value: 94.76
+      },
+      {
+        name: 'Malayan tapir',
+        value: 13.69
+      },
+      {
+        name: 'Sunda pangolin',
+        value: 93.07
       }
     ],
   }

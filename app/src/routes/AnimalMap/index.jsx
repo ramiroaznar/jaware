@@ -51,7 +51,12 @@ export default class AnimalMap extends Component {
     const viz = new window.carto.Viz(`
       color: #F3522B,
       strokeWidth: 0,
-      filter: $name == '${this.props.match.params.id}'
+      filter: and(
+        animation(
+          linear($cartodb_id, 1, 88), 5, fade(2, 2)
+        ) > 0,
+        $name == '${this.props.match.params.id}'
+        )
     `);
 
     this.setState({ viz, map });
