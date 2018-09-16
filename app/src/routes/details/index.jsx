@@ -38,8 +38,20 @@ export default class Details extends Component {
         </aside>
 
         <section className="details__section-wrapper">
-          <h2 className="details__subtitle">CREMA</h2>
-          <h1 className="details__title">{this.state.name}</h1>
+          <div className="details-section_header">
+            <div className="details-section_headerTitles">
+              <h2 className="details__subtitle">CREMA</h2>
+              <h1 className="details__title">{this.state.name}</h1>
+            </div>
+            <div className="details-section_headerInfo">
+              <h3 className="details-section_headerNumber">98%</h3>
+              <ul className="details-section_headerProducts">
+                <li className="is-active">Oil Palm</li>
+                <li>Soy</li>
+                <li>Biodiesel</li>
+              </ul>
+            </div>
+          </div>
 
           <div className="details__section">
             <h3 className="details__sectionTitle">Impacto ecológico</h3>

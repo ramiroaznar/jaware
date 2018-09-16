@@ -73,7 +73,7 @@
 .details__listItem {
   font: 16px/1.4 'Karla';
   margin-bottom: 20px;
-  width: 60%;
+  width: 80%;
 }
 
   .details__listItem-link-wrapper a {
@@ -156,6 +156,36 @@
   }
   .non-product_link:hover span:after {
     transform: scaleX(1);
+  }
+
+.details-section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+  .details-section_headerInfo {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .details-section_headerNumber {
+    font: 700 50px/1 'Karla';
+    color: #E9554C;
+    margin-bottom: 4px;
+    margin-top: -8px;
+  }
+  .details-section_headerProducts {
+    display: flex;
+    font: 16px/1.4 'Karla';
+    justify-content: flex-end;
+  }
+  .details-section_headerProducts li {
+    margin-left: 15px;
+    opacity: .4;
+  }
+  .details-section_headerProducts li.is-active {
+    font-weight: 700;
+    opacity: 1;
   }
 
 @media (max-width: 600px) {
