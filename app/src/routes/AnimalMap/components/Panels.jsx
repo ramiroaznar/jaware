@@ -7,9 +7,9 @@ export default class Sidebar extends Component {
       <div className="app-map">
         <div className="as-panel as-panel--top as-panel--right as-panel--vertical">
           <div className="as-panel__element">
-            <div class="app-map_header">
+            <div className="app-map_header">
               <h2 className="as-subheader">{this.props.sname}</h2>
-              <div class="app-map_headerTitle">
+              <div className="app-map_headerTitle">
                 <h1 className="as-title">{this.props.name}</h1>
               </div>
               <div className="app-map_media">
@@ -21,11 +21,11 @@ export default class Sidebar extends Component {
               {this.props.text}
             </p>
             <div className="app-map_description">
-              <dl class="app-map_list">
+              <dl className="app-map_list">
                 <dt className="as-subheader">Population:</dt>
                 <dd className="as-body">{this.props.population}</dd>
               </dl>
-              <dl class="app-map_list">
+              <dl className="app-map_list">
                 <dt className="as-subheader">Habitat Loss:</dt>
                 <dd className="as-body">{this.props.overlap} % </dd>
               </dl>
@@ -39,14 +39,17 @@ export default class Sidebar extends Component {
 
   componentDidMount() {
     const histogramWidget = document.querySelector('as-histogram-widget');
-    histogramWidget.data = [
-      { start: 2000, end: 2018, value: 6000 },
-      { start: 2000, end: 2018, value: 3000 },
-      { start: 2000, end: 2018, value: 1000 },
-      { start: 2000, end: 2018, value: 500 },
-      { start: 2000, end: 2018, value: 300 },
-      { start: 2000, end: 2018, value: 280 },
-      { start: 2000, end: 2018, value: 275 },
-    ];
+    histogramWidget.data = this.generateHistogramData();
+  }
+
+  generateHistogramData() {
+    let last = this.props.population;
+    const data = [{ start: 200, end: 2018, value: last }];
+    for (let i = 0; i < 6; i++) {
+      last += Math.floor(Math.random() * (last * 0.5)) + 1;
+      data.unshift({ start: 200, end: 2018, value: last });
+    }
+    console.log(data);
+    return data;
   }
 }
