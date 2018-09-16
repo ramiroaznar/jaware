@@ -51,12 +51,13 @@ export default class Details extends Component {
             </div>
             <div className="details-section_headerInfo">
               <ul className="details-section_headerProducts">
-                <li className="is-active">
-                  <img src={alert} />
+                <li className={this.state.brand !== 'Bezoya' ? 'is-active' : ''}>
+                  <img style={{display: this.state.brand !== 'Bezoya' ? '' : 'none'}} src={alert} />
                   Oil Palm
                 </li>
                 <li>Soy</li>
                 <li>Livestock Farming</li>
+                <li className={this.state.brand === 'Bezoya' ? 'is-active' : ''}>Plastic</li>
               </ul>
             </div>
           </div>
@@ -87,6 +88,10 @@ export default class Details extends Component {
   }
 
   getAnimals() {
+    if (this.state.brand === 'Bezoya') {
+      return <p className="details__sectionText">No animals direclty affected.</p>
+    }
+
     return this.state.afected_animals.map((animal, index) => {
       return (<li key={index} className="details__listItem">
         <div className="details__listItem-link-wrapper">
